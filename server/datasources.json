@@ -1,0 +1,15 @@
+{
+  "dbmemory": {
+    "name": "dbmemory",
+    "connector": "memory"
+  },
+  "db": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "Cambalache",
+    "username": "",
+    "password": "",
+    "name": "db",
+    "connector": "mongodb"
+  }
+}

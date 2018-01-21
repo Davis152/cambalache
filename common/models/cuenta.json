@@ -1,0 +1,48 @@
+{
+  "name": "Cuenta",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": true, 
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id":{
+      "type":"string",
+      "id":true,
+      "generated":true
+       
+    },
+  
+    "fechacreacion": {
+      "type": "date",
+      "required": false,
+      "default": "$now"
+    },
+    "ultimoacceso": {
+      "type": "date",
+      "required": true
+    },
+    "cuenta_usuarioid":
+    {
+      "type":"string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "cuenta_usuario": {
+      "type": "belongsTo",
+      "model": "Usuario",
+      "foreignKey": "cuenta_usuarioid",
+      "options": {
+        "nestRemoting": true,
+        "validate": true,
+        "forceId": false
+     
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
