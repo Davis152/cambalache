@@ -2,18 +2,16 @@
   "name": "Cuenta",
   "base": "PersistedModel",
   "idInjection": true,
-  "forceId": true, 
   "options": {
     "validateUpsert": true
   },
+  "forceId": true,
   "properties": {
-    "id":{
-      "type":"string",
-      "id":true,
-      "generated":true
-       
+    "id": {
+      "type": "string",
+      "id": true,
+      "generated": true
     },
-  
     "fechacreacion": {
       "type": "date",
       "required": false,
@@ -23,9 +21,8 @@
       "type": "date",
       "required": true
     },
-    "cuenta_usuarioid":
-    {
-      "type":"string",
+    "cuenta_usuarioid": {
+      "type": "string",
       "required": true
     }
   },
@@ -39,7 +36,6 @@
         "nestRemoting": true,
         "validate": true,
         "forceId": false
-     
       }
     }
   },

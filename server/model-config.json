@@ -62,5 +62,9 @@
   "Cuenta": {
     "dataSource": "db",
     "public": true
+  },
+  "meetups": {
+    "dataSource": "db",
+    "public": true
   }
 }
